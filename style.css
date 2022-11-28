@@ -1,0 +1,114 @@
+/* *{
+    outline: 1px solid black;
+} */
+
+#container {
+    margin: auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+    height: 60px;
+    background-color: #FFFFFF;
+    border: 1px solid #00000012;
+
+}
+
+#logo {
+    justify-self: flex-start;
+}
+
+#refresh {
+    visibility: hidden;
+}
+
+#refresh:hover {
+    cursor: pointer;
+}
+
+#maincontent {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 900px;
+    min-height: 500px;
+    background-color: #ECEEF0;
+    flex-wrap: wrap;
+
+}
+
+#loading {
+    display: none;
+    margin: auto;
+}
+
+.hiddencontent {
+    visibility: hidden;
+    display: none;
+}
+
+.giffy {
+    margin: 5px;
+    border-radius: 5%;
+    max-width: 45%;
+    height: auto;
+    cursor: pointer;
+    align-self: center;
+
+}
+
+.mini {
+    width: 100px;
+    height: auto;
+    align-self: flex-end;
+    margin: auto;
+    margin-bottom: 20px;
+    visibility: visible;
+    display: block;
+    z-index: 1;
+    flex-shrink: 10;
+
+}
+
+.mainItem {
+    width: 45%;
+    height: auto;
+    visibility: visible;
+    display: block;
+    /* align-self: center;
+    justify-content: center; */
+}
+
+#close {
+    flex-basis: 100%;
+    order: 1;
+    display: none;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+    margin-bottom: 1px;
+}
+
+svg {
+    background-color: #A7ABAF;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    #maincontent {
+        width: 100%;
+    }
+
+    svg {
+        width: 15px;
+        height: 15px;
+        padding: 5px;
+    }
+}
